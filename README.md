@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🦅 PSYCHOTEAM FRAMEWORK
+# 🦅 Security Tool
 
 ### Recon • OSINT • Web Security Toolkit
 
@@ -18,14 +18,13 @@
 
 # 📦 Features
 
-PSYCHOTEAM combines multiple security modules into a single command-line framework.
+this tool combines multiple security modules into a single command-line framework.
 
 ```text
-PSYCHOTEAM
 │
-├── 🔎 Recon
-│
+├
 ├── 📡 Scanning
+|
 │   ├── Port Scanner
 │   ├── Directory Scanner
 │   └── Subdomain Finder
@@ -37,7 +36,7 @@ PSYCHOTEAM
 ├── 🕸️ Web
 │   └── XSS Scanner
 │
-└── 📊 Dashboard
+└── 📊 main.py
 ```
 
 ---
@@ -203,7 +202,7 @@ HTTP Headers
 
 ```text
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃                  🛡️ PSYCHOTEAM FRAMEWORK                   ┃
+┃                  🛡️ security tool                            ┃
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
 
  🔎 SCANNING
@@ -221,6 +220,7 @@ HTTP Headers
  ⚔️ WEB
 
   7 ▸ XSS Scanner
+  8 ▸ DDos Scanner
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -255,11 +255,6 @@ python3 --version
 
 ## 2️⃣ Clone Project
 
-```bash
-git clone https://github.com/yourusername/PsychoTeam.git
-cd PsychoTeam
-```
-
 ---
 
 ## 3️⃣ Install Requirements
@@ -275,49 +270,6 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-
----
-
-# 📂 Project Structure
-
-```text
-PsychoTeam
-│
-├── Recon
-│
-├── Scanning
-│   ├── PortScanner.py
-│   ├── DirectoryScanner.py
-│   └── SubdomainFinder.py
-│
-├── OSINT
-│   ├── UsernameFinder.py
-│   └── IPLookup.py
-│
-├── Web
-│   └── XSSScanner.py
-│
-├── Dashboard
-│
-├── requirements.txt
-└── main.py
-```
-
----requirements:
-
-```text
-requests
-tqdm
-rich
-```
-
-Install manually:
-
-```bash
-pip install requests tqdm rich
-```
-
----
 
 # ⚠️ Disclaimer
 
@@ -336,7 +288,7 @@ The author is not responsible for misuse of this software.
 
 # 👨‍💻 Author
 
-### Psycho Security Team
+### Security Team
 
 📧 Contact: shayanghojoghi85@gmail.com
 
@@ -348,6 +300,3 @@ The author is not responsible for misuse of this software.
 
 </div>
 
-# 📋 Requirements
-
-Example
