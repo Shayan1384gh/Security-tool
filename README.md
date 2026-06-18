@@ -255,6 +255,10 @@ python3 --version
 
 ## 2️⃣ Clone Project
 
+```bash
+https://github.com/Shayan1384gh/Security-tool.git
+```
+
 ---
 
 ## 3️⃣ Install Requirements
