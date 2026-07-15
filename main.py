@@ -44,45 +44,41 @@ def run_tool(tool_name):
     print(f"\n▶️  Running {tool_name}...\n")
 
     if tool_name == "Recon":
-        url = input("🎯 Target URL (https://example.com): ")
-        if url:
-            subprocess.run([sys.executable, "Core/Scanning/Recon.py", url])
-        else:
-            subprocess.run([sys.executable, "Core/Scanning/Recon.py"])
+        subprocess.run([sys.executable, "Core/Scanning/Recon.py"])
+
 
     elif tool_name == "Port_scanner":
-        target = input("🎯 Target IP or Domain): ")
-        if target:
-            ports = input("🔢 Ports (1-1000 or 80,443,8080)(press Enter for default): ")
-            subprocess.run([sys.executable, "Core/Scanning/Port_scanner.py", target, ports])
-        else:
-            print("❌ Target required!")
+
+        subprocess.run([sys.executable, "Core/Scanning/Port_scanner.py"])
+
 
     elif tool_name == "Dir_scanner":
-        url = input("🎯 Target URL (https://example.com)(press Enter for default): ")
-        wordlist = input("📝 Wordlist path (press Enter for default): ")
-        if wordlist:
-            subprocess.run([sys.executable, "Core/Scanning/Dir_scanner.py", url, wordlist])
-        else:
-            subprocess.run([sys.executable, "Core/Scanning/Dir_scanner.py", url])
+
+        subprocess.run([sys.executable, "Core/Scanning/Dir_scanner.py"])
+
 
     elif tool_name == "DDos":
-        target = input("🎯 Target IP: ")
-        port = input("🔌 Port (default 80): ") or "80"
-        duration = input("⏱️  Duration in seconds: ")
-        subprocess.run([sys.executable, "Core/Web-Attack/DDos.py", target, port, duration])
+
+        subprocess.run([sys.executable, "Core/Web-Attack/DDos.py"])
+
 
     elif tool_name == "Xss":
-        url = input("🎯 Target URL with parameter (e.g., https://example.com/page?id=1): ")
-        subprocess.run([sys.executable, "Core/Web-Attack/Xss.py", url])
+
+        subprocess.run([sys.executable, "Core/Web-Attack/Xss.py"])
+
+
     elif tool_name == "UsernameFounder":
-        url = input("Enter the username you are looking for: ")
-        subprocess.run([sys.executable, "Core/OSINT/UsernameFounder.py" , url])
+
+        subprocess.run([sys.executable, "Core/OSINT/UsernameFounder.py"])
+
+
     elif tool_name == "Subdomain":
-        url = input("Enter the subdomain you are looking for: ")
-        subprocess.run([sys.executable, "Core/Scanning/Subdomain.py", url])
+
+        subprocess.run([sys.executable, "Core/Scanning/Subdomain.py"])
+
+
     elif tool_name == "Ip_lookup":
-        url = input("Enter the IP you are looking for: ")
+
         subprocess.run([sys.executable, "Core/OSINT/Ip_lookup.py"])
 
     print("\n✅ Tool execution completed!")
